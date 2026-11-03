@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Welcome to LearnHub</title>
+    <style>
+        body{
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: lightgrey;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .course{
+            background-color: white;
+            margin: 15px auto;
+            width: 200px;
+            padding: 15px;
+        }
+        form{
+            background-color: white;
+            width: 300px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to LearnHub</h1>
+    <p>Learn new skills online</p>
+    <br>
+
+    <h2>Our Courses:</h2>
+    <div class="container">
+        <div class="course">
+            <h3>Web Development</h3>
+            <p>Duration: 5hrs</p>
+            <p>Fees: 500 RS</p>
+        </div>
+
+        <div class="course">
+            <h3>Full Stack Development</h3>
+            <p>Duration: 16 hrs 45 mins</p>
+            <p>Fees: 1500 RS</p>
+        </div>
+
+        <div class="course">
+            <h3>Power BI</h3>
+            <p>Duration: 2 hrs 35 mins</p>
+            <p>Fees: 300 RS</p>
+        </div>
+    </div>
+
+    <h2>Registration Form</h2>
+    <form>
+        <label>Name:</label>
+        <input 
+        type="text"
+        required
+        >
+        <br>
+
+        <label>Email:</label>
+        <input 
+        type="email"
+        required
+        >
+        <br>
+
+        <label>Contact:</label>
+        <input 
+        type="tel"
+        required
+        >
+        <br>
+
+        <label>Courses</label>
+        <select>
+            <option>Select Category</option>
+            <option>Web Development</option>
+            <option>Full Stack Development</option>
+            <option>Power BI</option>
+        </select>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
